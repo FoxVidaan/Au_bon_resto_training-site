@@ -21,18 +21,17 @@ nav a {
     font-size: 30px;
     cursor: pointer;
 }
-nav a:hover {
-    font-size: 32px;
-}
 
 nav, section {
     width: 100vw;
     max-width: 1920px;
 }
+
 nav #logo {
     transform: rotate(0deg);
     transition: all 1s ease-in-out;
 }
+
 nav #logo:hover {
     transform: rotate(360deg)
 }
@@ -65,9 +64,10 @@ article {
     color: white;
     font-family: Impact
 }
+
 .button {
     display: inline-block;
-    vertical-align:middle;
+    vertical-align: middle;
     border-radius: 4px;
     background-color: #f4511e;
     border: none;
@@ -112,32 +112,36 @@ article {
     color: white;
     font-family: Verdana;
 }
+
 #cadreB:target {
     margin-top: -100px;
     padding-top: 100px;
 }
+
 #cadreB > h2 {
     font-size: 50px;
     text-align: center;
 }
+
 #cadreB div {
     display: flex;
     flex: 1;
 }
+
 #cadreB div > div {
     flex-direction: column;
     align-content: space-between;
 }
+
 #cadreB h4 {
     align-self: center;
 }
+
 #cadreB p {
     display: flex;
     justify-content: space-around;
 }
-#cadreC:target {
-    margin-top: 100px;
-}
+
 #cadreC > div {
     flex: 1;
     background-image: url("../images/contact.jpg");
@@ -156,8 +160,10 @@ form div {
     display: flex;
     justify-content: space-between;
     font-size: x-large;
-    margin-left: 20px; margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
 form div:last-child {
     width: 30%;
     align-self: flex-end;
@@ -173,14 +179,16 @@ input, textarea {
 }
 
 @media (max-width: 1024px) {
-    input , textarea {
+    input, textarea {
         flex: 2;
     }
 }
+
 @media (max-width: 600px) {
     nav a {
         display: none;
     }
+
     nav #logo {
         display: block;
         position: relative;
@@ -189,25 +197,31 @@ input, textarea {
     article {
         height: auto;
     }
-    #cadreA {
+
+    #cadreA, #cadreC {
         height: calc(100vh - 100px);
     }
+
     #cadreA h1 {
         font-size: 75px;
     }
+
     #cadreA button {
         width: fit-content;
     }
-    #cadreB div{
+
+    #cadreB div {
         margin-bottom: 20px;
     }
-    #cadreB div , form div {
+
+    #cadreB div, form div {
         flex-direction: column;
     }
-    #cadreC div {
-        flex: 0;
-    }
-    input , textarea{
 
+    #cadreC div {
+        font-size: initial;
+    }
+    #cadreC div:last-child {
+        width: initial;
     }
 }
