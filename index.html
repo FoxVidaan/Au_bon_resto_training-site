@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Au Bon Resto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<nav>
+    <a href="#cadreB">NOS MENUS</a>
+    <img id="logo" src="images/logo.png" alt="logo_au_bon_resto" height="80px" width="auto">
+    <a id="reserv" href="#cadreC">RESERVATIONS</a>
+</nav>
+<section>
+    <article id="cadreA">
+        <h1>Au Bon Resto</h1>
+        <button class="button"><span>Texte du bouton</span></button>
+    </article>
+    <article id="cadreB">
+            <h2>Nos Menus</h2>
+        <div>
+            <div>
+                <h4>Entrée</h4>
+                <p><span>Entrée 1</span><span>... €</span></p>
+                <p><span>Entrée 2</span><span>... €</span></p>
+                <p><span>Entrée 3</span><span>... €</span></p>
+                <p><span>Entrée 4</span><span>... €</span></p>
+            </div>
+            <div>
+                <h4>Plat</h4>
+                <p><span>Plat 1</span><span>... €</span></p>
+                <p><span>Plat 2</span><span>... €</span></p>
+                <p><span>Plat 3</span><span>... €</span></p>
+                <p><span>Plat 4</span><span>... €</span></p>
+
+            </div>
+            <div>
+                <h4>Desserts</h4>
+                <p><span>Desserts 1</span><span>... €</span></p>
+                <p><span>Desserts 2</span><span>... €</span></p>
+                <p><span>Desserts 3</span><span>... €</span></p>
+                <p><span>Desserts 4</span><span>... €</span></p>
+            </div>
+        </div>
+
+    </article>
+    <article id="cadreC">
+        <div></div>
+        <form>
+            <div>
+                <label class="form_col" for="nom">Nom</label>
+                <input type="text" id="nom" minlength="3" required>
+            </div>
+            <div>
+                <label class="form_col" for="prenom">Prénom</label>
+                <input type="text" id="prenom" minlength="3" required>
+            </div>
+            <div>
+                <label class="form_col" for="tel">Téléphone</label>
+                <input type="tel" id="tel">
+            </div>
+            <div>
+                <label class="form_col" for="mail">Email</label>
+                <input type="email" id="mail">
+            </div>
+            <div>
+                <label class="form_col" for="obj">Objet</label>
+                <input type="text" id="obj" required>
+            </div>
+            <div>
+                <label class="form_col" for="message">Message</label>
+                <textarea id="message" rows="3" required></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Envoyer">
+            </div>
+        </form>
+    </article>
+</section>
+</body>
+<script src="js/script.js"></script>
+</html>
